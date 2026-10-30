@@ -1,0 +1,115 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cabin+Sketch:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+
+:root {
+  --fuente-texto: "Open Sans", sans-serif;
+  --fuente-titulo: "Cabin Sketch", sans-serif;
+  --fuente-boton: "Archivo Black", sans-serif;
+  --color-acento: #30cfd0;
+  --color-tarjeta: #13111c;
+  --borde-tarjeta: #29233b;
+  --gradiente-fondo: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+body {
+  background-image: var(--gradiente-fondo);
+  min-height: 100vh;
+  margin: 0;
+  font-family: var(--fuente-texto);
+  color: #ffffff;
+}
+
+header h2 {
+  font-size: 22px;
+  color: var(--color-acento);
+  font-family: var(--fuente-titulo);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header p {
+  font-size: 13px;
+  color: #d1d8e0;
+}
+
+.card {
+  background-color: var(--color-tarjeta);
+  border: 1px solid var(--borde-tarjeta);
+  border-radius: 8px;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.cancion-titulo {
+  font-family: var(--fuente-titulo);
+  color: var(--color-acento);
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.boton {
+  background-color: var(--color-acento);
+  color: #000000;
+  font-family: var(--fuente-boton);
+  font-size: 13px;
+  border: 2px solid var(--color-acento);
+  border-radius: 0;
+  padding: 6px 18px;
+  margin: 4px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #000000;
+  color: #ffffff;
+  border-color: #000000;
+}
+
+.boton-github {
+  display: inline-block;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid var(--color-acento);
+  padding: 6px 16px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.boton-github:hover {
+  background-color: var(--color-acento);
+  color: #000000;
+}
+
+.lista-canciones {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cancion-item {
+  background-color: #1c1926;
+  padding: 10px 14px;
+  border-left: 3px solid var(--color-acento);
+  font-size: 13px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.cancion-item:hover {
+  background-color: #2b253d;
+  color: var(--color-acento);
+}
